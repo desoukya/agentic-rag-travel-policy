@@ -1,5 +1,5 @@
-export type ChatProvider = "openai" | "ollama";
-export type EmbeddingProvider = "openai" | "ollama";
+export type ChatProvider = "ollama";
+export type EmbeddingProvider = "ollama";
 
 export interface RetrievalChunk {
   id: string;
@@ -11,4 +11,11 @@ export interface RetrievalChunk {
 export interface AskRequest {
   question: string;
   namespace: string;
+}
+
+export interface AskResponse {
+  mode: "langchain" | "langgraph";
+  question: string;
+  answer: string;
+  sources: RetrievalChunk[];
 }

@@ -9,14 +9,8 @@
   "scripts": {
     "build": "yarn workspaces foreach -pt run build",
     "check": "yarn workspaces foreach -pt run check",
-    "dev:ingestion": "yarn workspace ingestion-consumer dev",
-    "dev:ingestion:openai": "DOTENV_CONFIG_PATH=.env.openai yarn workspace ingestion-consumer dev",
-    "dev:ingestion:ollama": "DOTENV_CONFIG_PATH=.env.ollama yarn workspace ingestion-consumer dev",
-    "dev:langchain": "yarn workspace langchain-rag dev",
-    "dev:langchain:openai": "DOTENV_CONFIG_PATH=.env.openai yarn workspace langchain-rag dev",
-    "dev:langchain:ollama": "DOTENV_CONFIG_PATH=.env.ollama yarn workspace langchain-rag dev",
-    "dev:langgraph": "yarn workspace langgraph-rag dev",
-    "dev:langgraph:openai": "DOTENV_CONFIG_PATH=.env.openai yarn workspace langgraph-rag dev",
-    "dev:langgraph:ollama": "DOTENV_CONFIG_PATH=.env.ollama yarn workspace langgraph-rag dev"
+    "dev:ingestion": "DOTENV_CONFIG_PATH=.env.ollama yarn workspace ingestion-consumer dev",
+    "dev:langchain": "DOTENV_CONFIG_PATH=.env.ollama yarn workspace langchain-rag dev",
+    "dev:langgraph": "DOTENV_CONFIG_PATH=.env.ollama yarn workspace langgraph-rag dev"
   }
 }

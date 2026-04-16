@@ -13,8 +13,9 @@
     "check": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
+    "@langchain/core": "^0.3.17",
     "@langchain/ollama": "^0.2.0",
-    "@langchain/openai": "^0.4.5",
+    "@pinecone-database/pinecone": "^4.1.0",
     "dotenv": "^16.4.7",
     "zod": "^3.23.8"
   },

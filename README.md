@@ -25,34 +25,24 @@ yarn install
 Environment files:
 
 ```bash
-.env.openai
 .env.ollama
-.env
 ```
 
-`EMBEDDING_PROVIDER` is the only switch you need for embeddings. The config resolves:
+The project now uses Ollama only.
 
-- OpenAI env uses `EMBEDDING_MODEL=text-embedding-3-small`
-- Ollama env uses `EMBEDDING_MODEL=nomic-embed-text`
+- `CHAT_PROVIDER=ollama`
+- `CHAT_MODEL=gemma3:1b`
+- `EMBEDDING_PROVIDER=ollama`
+- `EMBEDDING_MODEL=nomic-embed-text`
 - `LLM_BASE_URL` is the local model endpoint when using Ollama
 
-Start with the OpenAI env file:
-
 ```bash
-yarn dev:ingestion:openai
-yarn dev:langchain:openai
-yarn dev:langgraph:openai
+yarn dev:ingestion
+yarn dev:langchain
+yarn dev:langgraph
 ```
 
-Start with the Ollama env file:
-
-```bash
-yarn dev:ingestion:ollama
-yarn dev:langchain:ollama
-yarn dev:langgraph:ollama
-```
-
-If you use the plain scripts, they load `.env`.
+The plain scripts also load `.env.ollama`.
 
 Start each app from the repo root:
 
@@ -79,7 +69,7 @@ Health endpoints:
 Start the ingestion service:
 
 ```bash
-yarn dev:ingestion:ollama
+yarn dev:ingestion
 ```
 
 Post the travel policy dataset:
@@ -88,4 +78,23 @@ Post the travel policy dataset:
 curl -X POST http://localhost:4001/ingest \
   -H "Content-Type: application/json" \
   --data @datasets/travel-policy.dataset.json
+```
+
+## Query LangChain RAG
+
+Start the LangChain app:
+
+```bash
+yarn dev:langchain
+```
+
+Ask a question against the `travel-policy` namespace:
+
+```bash
+curl -X POST http://localhost:4002/ask \
+  -H "Content-Type: application/json" \
+  -d '{
+    "question": "Can I expense a taxi to the airport if severe weather creates a safety concern?",
+    "namespace": "travel-policy"
+  }'
 ```
