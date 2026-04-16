@@ -1,0 +1,86 @@
+{
+  "datasetId": "travel-policy-v1",
+  "namespace": "travel-policy",
+  "documents": [
+    {
+      "id": "travel-policy-overview",
+      "title": "Corporate Travel Policy Overview",
+      "text": "Employees may expense reasonable business travel costs when travel is approved in advance by their manager. Travelers must choose cost-effective options that align with safety, client commitments, and company policy. All expenses must be submitted within 15 calendar days of trip completion and must include itemized receipts unless the policy explicitly states otherwise.",
+      "metadata": {
+        "section": "overview",
+        "source": "travel-policy-handbook",
+        "tags": ["policy", "overview", "approvals"]
+      }
+    },
+    {
+      "id": "air-travel-booking",
+      "title": "Air Travel and Booking Rules",
+      "text": "Domestic flights must be booked in economy class. International flights longer than eight hours may be booked in premium economy with manager approval. Business class is allowed only for executives at vice president level or above, or for documented medical accommodations approved by People Operations. Travelers should book airfare at least 14 days in advance whenever possible.",
+      "metadata": {
+        "section": "air-travel",
+        "source": "travel-policy-handbook",
+        "tags": ["flights", "booking", "airfare"]
+      }
+    },
+    {
+      "id": "ground-transportation",
+      "title": "Ground Transportation and Airport Transfers",
+      "text": "Employees should use the lowest reasonable cost ground transportation option available. Public transit and standard rideshare services are preferred for airport transfers. Taxi or premium rideshare expenses are reimbursable when public transit is unavailable, when travel occurs before 6 AM or after 10 PM local time, when carrying bulky company equipment, or when severe weather conditions create a safety concern. Severe weather includes heavy rain, snow, ice, flooding, high wind advisories, or officially issued transit disruption alerts.",
+      "metadata": {
+        "section": "ground-transportation",
+        "source": "travel-policy-handbook",
+        "tags": ["taxi", "rideshare", "airport", "weather"]
+      }
+    },
+    {
+      "id": "lodging-policy",
+      "title": "Lodging and Hotel Reimbursement",
+      "text": "Travelers should stay in hotels within the company booking tool whenever possible. The nightly pre-tax lodging cap is 250 USD in the United States, 320 EUR in Western Europe, and 210 GBP in the United Kingdom. Higher rates are permitted only when a conference hotel is required, when there is a documented shortage of available rooms, or when prior written approval is granted by the department budget owner.",
+      "metadata": {
+        "section": "lodging",
+        "source": "travel-policy-handbook",
+        "tags": ["hotel", "lodging", "caps"]
+      }
+    },
+    {
+      "id": "meals-policy",
+      "title": "Meals and Incidentals",
+      "text": "Employees may expense actual meal costs up to 25 USD for breakfast, 35 USD for lunch, and 60 USD for dinner during domestic travel. For international travel, employees may expense actual meal costs up to a combined daily cap of 110 USD equivalent. Alcohol is not reimbursable unless part of an approved client-hosted event. Itemized receipts are required for any meal expense above 25 USD.",
+      "metadata": {
+        "section": "meals",
+        "source": "travel-policy-handbook",
+        "tags": ["meals", "reimbursement", "receipts"]
+      }
+    },
+    {
+      "id": "weather-exception-process",
+      "title": "Severe Weather and Travel Exceptions",
+      "text": "If severe weather affects a business trip, travelers should prioritize safety and notify their manager as soon as practical. Employees may book alternate ground transportation, change flights, or add one extra hotel night without pre-approval when delays or safety risks are caused by severe weather. The traveler must include a short written explanation in the expense report and attach supporting evidence such as airline alerts, weather advisories, or screenshots from an official weather service.",
+      "metadata": {
+        "section": "exceptions",
+        "source": "travel-policy-handbook",
+        "tags": ["weather", "exceptions", "safety"]
+      }
+    },
+    {
+      "id": "international-travel-approvals",
+      "title": "International Travel Approval Workflow",
+      "text": "International travel requires manager approval and finance approval before booking. Travel to countries marked medium risk by the corporate security provider also requires completion of a pre-travel risk acknowledgment. Travel to countries marked high risk requires security team approval and may not be booked until that approval is recorded. Requests should be submitted at least 21 days before departure.",
+      "metadata": {
+        "section": "approvals",
+        "source": "travel-policy-handbook",
+        "tags": ["international", "approval", "security"]
+      }
+    },
+    {
+      "id": "expense-submission-audit",
+      "title": "Expense Submission and Audit Requirements",
+      "text": "Expense reports must include business purpose, trip dates, destination, and supporting receipts. Expenses submitted more than 30 days late may be rejected unless the employee's director approves an exception. Repeated non-compliance may result in temporary suspension of corporate card privileges. Finance audits a sample of expense reports every month for policy compliance.",
+      "metadata": {
+        "section": "expense-reporting",
+        "source": "travel-policy-handbook",
+        "tags": ["expenses", "audit", "receipts"]
+      }
+    }
+  ]
+}
